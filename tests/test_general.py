@@ -119,7 +119,7 @@ def test_main_results():
     # run the script externally with full arguments
     os.popen('python3 -m pip install -e .').read()
     os.popen(
-        'python3 Examples/General.py -url example.com -username citests -password hunter2'
+        'python3 Examples/general.py -url example.com -username citests -password hunter2'
     ).read()
 
     filename = "general.json"
