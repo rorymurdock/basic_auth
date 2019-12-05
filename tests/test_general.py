@@ -6,7 +6,7 @@ import argparse
 from io import StringIO
 
 from basic_auth import Auth
-from Examples.General import Config
+from Examples.general import Config
 
 # Init package
 AUTH = Auth()
