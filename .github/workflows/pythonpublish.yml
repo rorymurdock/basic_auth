@@ -9,6 +9,7 @@ on:
 
 jobs:
   release:
+    needs: Pytest
     name: Create Release
     runs-on: ubuntu-latest
     steps:
