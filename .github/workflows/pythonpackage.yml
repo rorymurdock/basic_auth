@@ -1,8 +1,6 @@
 name: Pytest
 
-on:
-  check_suite:
-    types: [rerequested, completed]
+on: [push]
 
 jobs:
   build:
