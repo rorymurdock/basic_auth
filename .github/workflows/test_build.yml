@@ -3,6 +3,7 @@ name: Pytest
 on:
   push:
     branches:
+      - Development
       - '!master'   # excludes master
 
 jobs:
