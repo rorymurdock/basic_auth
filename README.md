@@ -1,7 +1,7 @@
+# basic_auth
+
 [![Build Status](https://github.com/rorymurdock/basic_auth/workflows/Pytest/badge.svg)](https://github.com/rorymurdock/basic_auth/actions)
 [![Coverage Status](https://coveralls.io/repos/github/rorymurdock/basic_auth/badge.svg?branch=master)](https://coveralls.io/github/rorymurdock/basic_auth?branch=master)
-
-# Basic
 
 A package for creating and reading config files for basic authentication.
 
@@ -9,12 +9,12 @@ A package for creating and reading config files for basic authentication.
 A lot of APIs use basic authentication, this is where you concatenate `username` and `password` separated by a `:` and encode them with base64 then prefix with `Basic`. So `username:password` encoded with base64 becomes `Basic dXNlcm5hbWU6cGFzc3dvcmQ=`. This package manages the encoding and storing of this configuration so it can be easily retrieve and used.
 
 # Usage
-Getting started is easy, first install the package using `pip install basic`
+Getting started is easy, first install the package using `pip install basic_auth`
 
 Next you can create your auth dict
 
 ```python
-form basic_auth import Auth
+from basic_auth import Auth
 ```
 
 ```python
@@ -27,7 +27,7 @@ Auth().create_config("basic_config.json", CONFIG)
 ```
 
 To read it in your own scripts
-```
+```python
 CONFIG = Auth().read_config("basic_config.json")
 ```
 
