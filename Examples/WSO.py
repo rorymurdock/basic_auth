@@ -13,10 +13,10 @@ class Config():
     def interactive(self):
         """Ask the user for the information and format the config"""
         # Get data from user
-        url = AUTH.ask("AirWatch URL: ")
-        username = AUTH.ask("AirWatch Username: ")
-        password = AUTH.ask("AirWatch Password: ")
-        tenant_code = AUTH.ask("AirWatch Tenantcode: ")
+        url = AUTH.ask("AirWatch URL")
+        username = AUTH.ask("AirWatch Username")
+        password = AUTH.ask("AirWatch Password")
+        tenant_code = AUTH.ask("AirWatch Tenantcode")
 
         # Encode data into base64
         encoded = AUTH.encode(username, password)
