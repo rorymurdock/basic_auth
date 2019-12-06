@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="basic_auth",
-    version="0.0.2",
+    version="0.0.3",
     author="Rory Murdock",
     author_email="rory@itmatic.com.au",
     description="A package for read and writing auth",
