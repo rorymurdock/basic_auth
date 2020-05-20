@@ -14,7 +14,7 @@ Getting started is easy, first install the package using `pip install basic`
 Next you can create your auth dict
 
 ```python
-form basic_auth import Auth
+from basic_auth import Auth
 ```
 
 ```python
