@@ -1,5 +1,6 @@
 """Automated testing for Basic"""
 import os
+import shutil
 import string
 import random
 import pytest
@@ -55,6 +56,7 @@ def test_check_config_dir():
     # Test writing to read only
     assert Auth(
         config_dir="config/readonly/test").create_config_directory() is False
+    shutil.rmtree("config")
 
 
 def test_check_file_exists():
